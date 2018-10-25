@@ -2,4 +2,4 @@
  * Public API Surface of shared-view
  */
 
-export * from './lib';
+export * from './lib/book-store/index';
