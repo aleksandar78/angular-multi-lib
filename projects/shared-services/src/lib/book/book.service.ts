@@ -15,4 +15,8 @@ export class BookService {
     return of(OliverTwist);
   }
 
+  public getAll(): Observable<Book[]> {
+    return of([OliverTwist]);
+  }
+
 }
