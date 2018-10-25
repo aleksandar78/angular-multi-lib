@@ -16,6 +16,36 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "shared-view": [
+        "dist/shared-view",
+        "projects/shared-view/src/public_api"
+      ],
+      "shared-view/*": [
+        "dist/shared-view/*"
+      ],
+      "shared-services": [
+        "dist/shared-services",
+        "projects/shared-services/src/public_api"
+      ],
+      "shared-services/*": [
+        "dist/shared-services/*"
+      ],
+      "shared-entities": [
+        "dist/shared-entities",
+        "projects/shared-entities/src/public_api"
+      ],
+      "shared-entities/*": [
+        "dist/shared-entities/*"
+      ],
+      "shared-components": [
+        "dist/shared-components",
+        "projects/shared-components/src/public_api"
+      ],
+      "shared-components/*": [
+        "dist/shared-components/*"
+      ]
+    }
   }
 }

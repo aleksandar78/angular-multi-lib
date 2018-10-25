@@ -133,6 +133,146 @@
           }
         }
       }
+    },
+    "shared-view": {
+      "root": "projects/shared-view",
+      "sourceRoot": "projects/shared-view/src",
+      "projectType": "library",
+      "prefix": "sv",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/shared-view/tsconfig.lib.json",
+            "project": "projects/shared-view/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/shared-view/src/test.ts",
+            "tsConfig": "projects/shared-view/tsconfig.spec.json",
+            "karmaConfig": "projects/shared-view/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/shared-view/tsconfig.lib.json",
+              "projects/shared-view/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "shared-services": {
+      "root": "projects/shared-services",
+      "sourceRoot": "projects/shared-services/src",
+      "projectType": "library",
+      "prefix": "ss",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/shared-services/tsconfig.lib.json",
+            "project": "projects/shared-services/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/shared-services/src/test.ts",
+            "tsConfig": "projects/shared-services/tsconfig.spec.json",
+            "karmaConfig": "projects/shared-services/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/shared-services/tsconfig.lib.json",
+              "projects/shared-services/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "shared-entities": {
+      "root": "projects/shared-entities",
+      "sourceRoot": "projects/shared-entities/src",
+      "projectType": "library",
+      "prefix": "se",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/shared-entities/tsconfig.lib.json",
+            "project": "projects/shared-entities/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/shared-entities/src/test.ts",
+            "tsConfig": "projects/shared-entities/tsconfig.spec.json",
+            "karmaConfig": "projects/shared-entities/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/shared-entities/tsconfig.lib.json",
+              "projects/shared-entities/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    },
+    "shared-components": {
+      "root": "projects/shared-components",
+      "sourceRoot": "projects/shared-components/src",
+      "projectType": "library",
+      "prefix": "sc",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/shared-components/tsconfig.lib.json",
+            "project": "projects/shared-components/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/shared-components/src/test.ts",
+            "tsConfig": "projects/shared-components/tsconfig.spec.json",
+            "karmaConfig": "projects/shared-components/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/shared-components/tsconfig.lib.json",
+              "projects/shared-components/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ang7-multi-lib"
